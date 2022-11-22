@@ -1,8 +1,6 @@
-import  Diretor  from "./Diretor.js";
+import { Editor } from "./Editor.js";
 
-class Principal extends Diretor {
-    
-}
- 
+const homem = new Editor('pedro', 44)
 
- 
+homem.nomeCompleto()
+
