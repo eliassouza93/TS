@@ -1,5 +1,5 @@
 
-export class Funcionario {
+export default class Funcionario {
     nome: string
     cpf: string
     endereco: string

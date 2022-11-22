@@ -1,6 +1,6 @@
-import { Funcionario } from "./Funcionario"
+import Funcionario from "./Funcionario.js"
 
-export class Editor extends Funcionario {
+export default class Editor extends Funcionario {
     private nomeEditor: string
 
     constructor(nomeEditor: string, nome: string, cpf: string, endereco: string, telefone: number, salario: number) {
@@ -8,11 +8,16 @@ export class Editor extends Funcionario {
         this.nomeEditor = nomeEditor
     }
 
+    dadosEditor(): void {
+        console.log('Dados do Editro da empresa: ' + this.nomeEditor, this.nome, this.cpf, this.endereco, this.telefone, this.salario)
+
+
+    }
+
 
 
 }
 
-}
 
 
 

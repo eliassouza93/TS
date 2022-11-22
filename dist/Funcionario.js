@@ -1,4 +1,4 @@
-export class Funcionario {
+export default class Funcionario {
     constructor(nome, cpf, endereco, telefone, salario) {
         this.nome = nome;
         this.cpf = cpf;
