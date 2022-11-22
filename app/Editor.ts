@@ -1,19 +1,20 @@
-export class Editor {
-    nome: string
-    idade: number
-    constructor(nome: string, idade: number) {
-        this.nome = nome
-        this.idade = idade
+import { Funcionario } from "./Funcionario"
+
+export class Editor extends Funcionario {
+    private nomeEditor: string
+
+    constructor(nomeEditor: string, nome: string, cpf: string, endereco: string, telefone: number, salario: number) {
+        super(nome, cpf, endereco, telefone, salario)
+        this.nomeEditor = nomeEditor
     }
 
 
-    nomeCompleto() {
-        console.log('Metodo vindo da classe mae: ' + this.nome + ', ' + this.idade)
-    }
+
+}
 
 }
 
 
- 
+
 
 
